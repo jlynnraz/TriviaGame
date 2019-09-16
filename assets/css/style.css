@@ -1,0 +1,53 @@
+body {
+    background-color: steelblue;
+    background-image: url("../images/triviaBackround.jpg");
+    background-repeat: no-repeat;
+    color:purple;
+    background-size: cover;
+ 
+}
+
+h1{
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+#questions{
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+.container{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: bold;
+}
+
+#timer{
+    font-size: 35px;
+    text-align: center;
+}
+
+#submit{
+    width: 150px;
+    height: auto;
+    margin-left: 50%;
+    background: purple;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-family: 'Monoton', cursive;
+    font-size: 15px;
+    
+}
+
+#start{
+        width: 150px;
+        height: auto;
+        margin-left: 40%;
+        background: purple;
+        color: blanchedalmond;
+        font-weight: bold;
+        font-family: 'Monoton', cursive;
+        font-size: 15px;
+        
+}
