@@ -1,48 +1,6 @@
 
 $(document).ready(function () {
-    // var questions = [
-    //     {
-    //         question: "What was the first full length CGI movie?",
-    //         answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-    //         correctAnswer: "Toy Story"
-    //     },
-    //     {
-    //         question: "Which of these is NOT a name of one of the Spice Girls?",
-    //         answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-    //         correctAnswer: "Fred Spice"
-    //     },
-    //     {
-    //         question: "Which NBA team won the most titles in the 90s?",
-    //         answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-    //         correctAnswer: "Chicago Bulls"
-    //     },
-    //     {
-    //         question: "Which group released the hit song, 'Smells Like Teen Spirit'?",
-    //         answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-    //         correctAnswer: "Nirvana"
-    //     },
-    //     {
-    //         question: "Which popular Disney movie featured the song, 'Circle of Life'?",
-    //         answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-    //         correctAnswer: "The Lion King"
-    //     },
-    //     {
-    //         question:
-    //             "Finish this line from the Fresh Prince of Bel-Air theme song: 'I whistled for a cab and when it came near, the license plate said...'",
-    //         answers: ["Dice", "Mirror", "Fresh", "Cab"],
-    //         correctAnswer: "Fresh"
-    //     },
-    //     {
-    //         question: "What was Doug's best friend's name?",
-    //         answers: ["Skeeter", "Mark", "Zach", "Cody"],
-    //         correctAnswer: "Skeeter"
-    //     },
-    //     {
-    //         question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-    //         answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-    //         correctAnswer: "Mr.Belding"
-    //     }
-    // ];
+    
     var correct = 0;
 
     //shows total incorrect answers
@@ -51,18 +9,25 @@ $(document).ready(function () {
     //shows unanswered questions
     var unanswered = 0;
 
+    var number = 90;
+
+    var intervalId;
+
     function checkAnswers() {
+        
         var answers = $("#question-list");
         var inputs = answers.children("input:checked");
         console.log(inputs);
         for (var i = 0; i < inputs.length; i++){
             console.log($(inputs[i]).val());
-            if ($(inputs[i]).val() === true){
+            if ($(inputs[i]).val() === "true"){
                 correct++;
-            }else if($(inputs[i]).val()===false){
+            }else if($(inputs[i]).val()==="false"){
                 incorrect++ 
             }
+
         }
+       
 // $("#answerBox").show("<h2>" + "#correctAnswers" + correct + "</h2>" + "<h2>" + incorrect + "</h2>");
     };
 
@@ -98,9 +63,15 @@ $(document).ready(function () {
         checkAnswers()
 
         stop();
-        $("#answerBox").show("<h2>Correct Answers: " + correct + "</h2>" + "<h2>Incorrect Answers: " + incorrect + "</h2>");
+
+        $("#answerBox").append("<h2>Correct Answers: " + correct + "</h2>" + "<h2>Incorrect Answers: " + incorrect + "</h2>")
+
+        
     })
-    var number = 90;
+
+
+    
+    
     function run() {
         intervalId = setInterval(decrement, 1000);
 
