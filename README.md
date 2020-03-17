@@ -10,7 +10,7 @@ Jaimee Trivia was created to utilize "Moment" in JavaScript to create a sense of
 ## Installation
 * Fork It
 * Clone It
-* Open in your terminal or bash and run NPM Install
+* Open in default browswer
 * Or click [HERE](https://jlynnraz.github.io/TriviaGame/) to run the live demo
 
 ## Technologies
