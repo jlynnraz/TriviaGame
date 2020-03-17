@@ -1,5 +1,5 @@
 ## Jaimee Trivia!
-Welcome to Jaimee Trivia! Can you guess all the mishaps that have happened to Jaimee? Try your luck, but remember you only have 90 seconds to answer all the questions! **Horrible photos of Jaimee brought to you by Jaimee's boyfriend**
+Welcome to Jaimee Trivia! Can you guess all the mishaps that have happened to Jaimee? Try your luck, but remember you only have 90 seconds to answer all the questions! Check all the boxes then click submit to see how many you answered correctly. **Horrible photos of Jaimee brought to you by Jaimee's boyfriend**
 
 ## Motivation
 Jaimee Trivia was created to utilize "Moment" in JavaScript to create a sense of urgency for the user through the use of a timer. Once the timer is up it will tally up the correct and incorrect answers for the user.
