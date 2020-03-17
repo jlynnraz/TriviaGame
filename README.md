@@ -10,7 +10,7 @@ Jaimee Trivia was created to utilize "Moment" in JavaScript to create a sense of
 ## Installation
 * Fork It
 * Clone It
-* Open in default browswer
+* Open in default browser
 * Or click [HERE](https://jlynnraz.github.io/TriviaGame/) to run the live demo
 
 ## Technologies
