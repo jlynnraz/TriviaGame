@@ -10,9 +10,38 @@ Jaimee Trivia was created to utilize "Moment" in JavaScript to create a sense of
 ## Installation
 * Fork It
 * Clone It
+* Open in your terminal or bash and run NPM Install
+* Or click [HERE](https://jlynnraz.github.io/TriviaGame/) to run the live demo
 
 ## Technologies
 * JavaScript
+* jQuery
 * HTML
 * CSS
+
+## Code Sample
+Questions are written into an HTML form. Then a function checkAnswers is called when the submit button is clicked:
+
+~~~
+ function checkAnswers() {
+        
+        var answers = $("#question-list");
+        var inputs = answers.children("input:checked");
+        console.log(inputs);
+        for (var i = 0; i < inputs.length; i++){
+            console.log($(inputs[i]).val());
+            if ($(inputs[i]).val() === "true"){
+                correct++;
+            }else if($(inputs[i]).val()==="false"){
+                incorrect++ 
+            }
+
+        }
+~~~
+
+## Contact
+* jlynnraz@gmail.com
+* [LinkedIn](https://www.linkedin.com/in/jaimee-razee/)
+* [Portfolio](https://jlynnraz.github.io/Portfolio2/)
+
 
