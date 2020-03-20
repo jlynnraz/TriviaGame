@@ -19,7 +19,7 @@ Jaimee Trivia was created to utilize a timer in JavaScript to create a sense of 
 * HTML
 * CSS
 
-## Code Sample
+## Behind the Scenes
 Questions are written into an HTML form. Then a function checkAnswers is called when the submit button is clicked:
 
 ~~~
