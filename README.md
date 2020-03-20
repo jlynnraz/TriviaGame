@@ -40,6 +40,7 @@ Questions are written into an HTML form. Then a function checkAnswers is called 
 ~~~
 
 ## Contact
+Please contact me directly with any questions or comments!
 * jlynnraz@gmail.com
 * [LinkedIn](https://www.linkedin.com/in/jaimee-razee/)
 * [Portfolio](https://jlynnraz.github.io/Portfolio2/)
